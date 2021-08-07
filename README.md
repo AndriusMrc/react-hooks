@@ -1,4 +1,4 @@
-Project created to lear React Hooks.
+Project created to learn React Hooks.
 
 ## Hooks
 
