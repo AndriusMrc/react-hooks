@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { UseEffectHook } from "../hooks/useEffect";
 import { UseStateHook } from "../hooks/useState";
 
 const HomePage = () => {
@@ -18,8 +19,11 @@ const HomePage = () => {
         </a>
       </h1>
       <br />
-      <h2>useEffect</h2>
+      <h2>useState</h2>
       <UseStateHook />
+      <hr style={{ width: "50%", marginLeft: "0" }} />
+      <h2>useEffect</h2>
+      <UseEffectHook />
       <hr style={{ width: "50%", marginLeft: "0" }} />
     </div>
   );
