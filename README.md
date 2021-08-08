@@ -28,3 +28,8 @@ By following this rule, you ensure that all stateful logic in a component is cle
 ## Learn More
 
 [HOOKS TESTS ACTING UP by Erin Zimmer](https://cogent.co/blog/hooks-tests-acting-up) [April 14, 2021]
+
+
+## TODO
+- Create fake ChatAPI with methods: subscribeToFriendStatus and unsubscribeFromFriendStatus
+- Add types to the project and implement Friend object with: id, name
