@@ -14,6 +14,7 @@
  * There are two common kinds of side effects in React components: those that don’t require cleanup, and those that do.
  * If useEffect returns a function, React will run it when it is time to clean up
  * When exactly does React clean up an effect? React performs the cleanup when the component unmounts.
+ * The clean-up function runs before the component is removed from the UI to prevent memory leaks.
  * Effects run for every render and not just once. This is why React also cleans up effects from the previous render before running the effects next time.
  *
  * [Optimizing performance by skipping effects]
