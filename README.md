@@ -9,6 +9,7 @@ Project created to learn React Hooks.
 - useContext
 # [Additional Hooks]
 - useReducer
+- useCallback
 ```
 
 ## Rules of Hooks
