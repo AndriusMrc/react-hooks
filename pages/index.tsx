@@ -1,5 +1,7 @@
 import Head from "next/head";
+import { UseContextHook } from "../hooks/useContext";
 import { UseEffectHook } from "../hooks/useEffect";
+import { UseReducerHookWithThirdArgument } from "../hooks/useReducer";
 import { UseStateHook } from "../hooks/useState";
 
 const HomePage = () => {
@@ -24,6 +26,12 @@ const HomePage = () => {
       <hr style={{ width: "50%", marginLeft: "0" }} />
       <h2>useEffect</h2>
       <UseEffectHook />
+      <hr style={{ width: "50%", marginLeft: "0" }} />
+      <h2>useContext</h2>
+      <UseContextHook />
+      <hr style={{ width: "50%", marginLeft: "0" }} />
+      <h2>useReducer</h2>
+      <UseReducerHookWithThirdArgument initialCount={5} />
       <hr style={{ width: "50%", marginLeft: "0" }} />
     </div>
   );

@@ -3,9 +3,12 @@ Project created to learn React Hooks.
 ## Hooks
 
 ```bash
-useState
-# and
-useEffect
+# [Basic Hooks]
+- useState
+- useEffect
+- useContext
+# [Additional Hooks]
+- useReducer
 ```
 
 ## Rules of Hooks
