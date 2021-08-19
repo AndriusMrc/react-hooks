@@ -1,6 +1,6 @@
 /**
  * Pass an inline callback and an array of dependencies.
- * useCallback will return a memoized version of the callback that only changes if at least one of the dependencies has changed.
+ * useCallback will return a memoized version of the callback that only changes if one of the dependencies has changed.
  * This is useful when passing callbacks to child components that rely on reference equality to prevent unnecessary renders.
  * Every value referenced inside the callback should also appear in the dependencies array.
  *

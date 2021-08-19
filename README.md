@@ -10,6 +10,7 @@ Project created to learn React Hooks.
 # [Additional Hooks]
 - useReducer
 - useCallback
+- useMemo
 ```
 
 ## Rules of Hooks
