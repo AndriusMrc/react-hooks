@@ -11,6 +11,7 @@ Project created to learn React Hooks.
 - useReducer
 - useCallback
 - useMemo
+- useRef
 ```
 
 ## Rules of Hooks
