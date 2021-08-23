@@ -12,6 +12,7 @@ Project created to learn React Hooks.
 - useCallback
 - useMemo
 - useRef
+- useImperativeHandle
 ```
 
 ## Rules of Hooks

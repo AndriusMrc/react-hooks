@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { UseContextHook } from "../hooks/useContext";
 import { UseEffectHook } from "../hooks/useEffect";
+import { UseImperativeHandleHook } from "../hooks/useImperativeHandle";
 import { UseReducerHookWithThirdArgument } from "../hooks/useReducer";
 import { UseRefHook } from "../hooks/useRef";
 import { UseStateHook } from "../hooks/useState";
@@ -36,6 +37,9 @@ const HomePage = () => {
       <hr style={{ width: "50%", marginLeft: "0" }} />
       <h2>useRef</h2>
       <UseRefHook />
+      <hr style={{ width: "50%", marginLeft: "0" }} />
+      <h2>useImperastiveHandle</h2>
+      <UseImperativeHandleHook />
       <hr style={{ width: "50%", marginLeft: "0" }} />
     </div>
   );
