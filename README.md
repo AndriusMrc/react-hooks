@@ -13,6 +13,7 @@ Project created to learn React Hooks.
 - useMemo
 - useRef
 - useImperativeHandle
+- useKayoutEffect
 ```
 
 ## Rules of Hooks
