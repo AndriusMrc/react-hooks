@@ -14,6 +14,7 @@ Project created to learn React Hooks.
 - useRef
 - useImperativeHandle
 - useKayoutEffect
+- useDebugValue
 ```
 
 ## Rules of Hooks

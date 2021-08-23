@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { UseContextHook } from "../hooks/useContext";
+import { UseDebugValueHook } from "../hooks/useDebugValue";
 import { UseEffectHook } from "../hooks/useEffect";
 import { UseImperativeHandleHook } from "../hooks/useImperativeHandle";
 import { UseReducerHookWithThirdArgument } from "../hooks/useReducer";
@@ -40,6 +41,9 @@ const HomePage = () => {
       <hr style={{ width: "50%", marginLeft: "0" }} />
       <h2>useImperastiveHandle</h2>
       <UseImperativeHandleHook />
+      <hr style={{ width: "50%", marginLeft: "0" }} />
+      <h2>useDebugValue</h2>
+      <UseDebugValueHook />
       <hr style={{ width: "50%", marginLeft: "0" }} />
     </div>
   );
