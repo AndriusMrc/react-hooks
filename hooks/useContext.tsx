@@ -12,9 +12,6 @@
  * If re-rendering the component is expensive, you can optimize it by using memoization.
  */
 
-// TODO
-// https://reactjs.org/docs/context.html
-
 import React, { useContext } from "react";
 
 const themes = {
@@ -28,16 +25,24 @@ const themes = {
   },
 };
 
-const ThemeContext = React.createContext(themes.dark); // Context object
+// Create a context object with "dark" as the default value
+// The default value argument is only used when a component does not have a matching Provider above it in the tree
+const ThemeContext = React.createContext(themes.dark);
+ThemeContext.displayName = "MyDisplayName"; // Component will appear as MyDisplayName in the DevTools
 
 export const UseContextHook = () => {
   return (
+    // Use a Provider to pass the current theme to the tree below
+    // Any component can read it, no matter how deep it is
+    // In this example, we're passing "dark" as the current value
+    // All components that are descendants of a Provider will re-render whenever the Provider’s value prop changes
     <ThemeContext.Provider value={themes.dark}>
       <Toolbar />
     </ThemeContext.Provider>
   );
 };
 
+// A component in the middle doesn't have to pass the theme down explicitly anymore
 const Toolbar = () => {
   return (
     <div>
